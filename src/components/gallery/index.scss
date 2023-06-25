@@ -1,0 +1,25 @@
+.gallery {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+
+  .item {
+    width: 180px;
+
+    & > [class^="face-"] {
+      box-sizing: content-box;
+      border: solid 3px #CCC;
+      width: 180px;
+      height: 180px;
+    }
+
+    h3 {
+      margin: 0;
+      margin-top: 8px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+}
